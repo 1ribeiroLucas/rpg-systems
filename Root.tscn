@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://deom4bl7nbcar"]
+
+[ext_resource type="PackedScene" uid="uid://vsansaphth3t" path="res://scenes/tile-movement-fourway/MapOne.tscn" id="1_gxo8o"]
+
+[node name="Root" type="Node" unique_id=1861640341]
+
+[node name="MapOne" parent="." unique_id=448165478 instance=ExtResource("1_gxo8o")]

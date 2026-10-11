@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dnpp34fxpagfd"]
+
+[ext_resource type="Script" uid="uid://cl5j5kbxbd3vi" path="res://scenes/tile-movement-fourway/scripts/player.gd" id="1_r0348"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_rtqtc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x15ge"]
+size = Vector2(16, 16)
+
+[node name="Player" type="CharacterBody2D" unique_id=1143375075]
+script = ExtResource("1_r0348")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=512216449]
+scale = Vector2(16, 16)
+texture = SubResource("CanvasTexture_rtqtc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1715277386]
+shape = SubResource("RectangleShape2D_x15ge")
+
+[node name="RayCast2D" type="RayCast2D" parent="." unique_id=1352059856]
+target_position = Vector2(0, 16)
